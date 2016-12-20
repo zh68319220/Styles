@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      width: 640px;
+      position: relative;
+      // transform: translate3d(0, 0, 0); 这个属性影响fixed
+      font-family: '微软雅黑';
+    }
+
+    .menu{
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 0;
+      min-height: 90px;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu"></div>
+</body>
+</html>
