@@ -1,0 +1,19 @@
+{
+  "name": "global.css",
+  "version": "1.0.0",
+  "description": "png change to canvas particles animation",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp browser-sync"
+  },
+  "author": "yf",
+  "license": "MIT",
+	"devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-px2rem": "^1.0.10",
+    "gulp-sass": "^3.0.0",
+    "gulp-watch": "^4.3.11"
+  }
+}
