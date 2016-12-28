@@ -52,8 +52,25 @@
     refreshRem();
   })(window);
   </script>
+  <style>
+    .main{
+      width: 100%;
+      height: 3000px;
+    }
+    .fixed{
+      background: #888;
+      position: fixed;
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
 </head>
-<body ontouchmove="event.preventDefault();">
-
+<body>
+  <div class="fixed">阿斯顿</div>
+  <div class="main"></div>
 </body>
 </html>
