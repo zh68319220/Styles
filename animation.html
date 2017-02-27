@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            position: relative;
+            width: 100px;
+            height: 300px;
+            /*border: 1px solid red;*/
+        }
+        .bgchange{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #bbb;
+            width: 100%;
+            height: 150px;
+            animation: bgc linear 1s forwards;
+            -webkit-animation: bgc linear 1s forwards;
+        }
+        .bgchange:hover{
+            animation: bgc linear 1s forwards;
+            -webkit-animation: bgc linear 1s forwards;
+        }
+        @keyframes bgc{
+            0%{}
+            50%{
+                top: 50px;
+            }
+            100%{
+                background-color: #000;
+                top: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="bgchange"></div>
+    </div>
+</body>
+</html>

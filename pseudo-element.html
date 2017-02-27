@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        a{
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            outline: none;
+            text-decoration: none;
+            font-size: 25px;
+            text-align: center;
+            margin: 0 0 0 50px;
+        }
+        a:hover::before, a:hover::after{
+            position: absolute;
+            top: 0;
+        }
+        a:hover::after{
+            content: ']';
+            right: -20px;
+        }
+        a:hover::before{
+            content: '[';
+            left: -20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">12萨达3</a>
+    <a href="#">32撒旦1</a>
+</body>
+</html>
