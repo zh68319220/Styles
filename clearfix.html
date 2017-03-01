@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    *{ margin: 0; padding: 0; }
+    .clearfix1:after{ /* not support for ie 6/7 */
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .clearfix2:before, .clearfix2:after{
+        content: "";
+        display: table;
+    }
+    .clearfix2:after{
+        clear: both;
+    }
+    .clearfix2{ /* support for ie 6/7 */
+        zoom: 1;
+    }
+
+    ul{ list-style: none;width: 100px; }
+    ul li{ float: left;width: 100%;text-align: center; }
+    </style>
+</head>
+<body>
+    <ul class="clearfix1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <ul class="clearfix2">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>
