@@ -1,0 +1,56 @@
+/*
+  记录一些CSS兼容的写法
+*/
+
+/* animation ie10+ */
+.animation{
+  -webkit-animation: move 1s 1; /*safari chrome*/
+          animation: move 1s 1;
+}
+
+/* transition ie10+ */
+div{
+  width:100px;
+  transition: width 2s;
+  -moz-transition: width 2s; /* Firefox 4 */
+  -webkit-transition: width 2s; /* Safari 和 Chrome */
+  -o-transition: width 2s; /* Opera */
+}
+
+/* transform ie10+ */
+div{
+  transform:rotate(7deg);
+  -ms-transform:rotate(7deg); 	/* IE 9 (2D转换) */
+  -moz-transform:rotate(7deg); 	/* Firefox */
+  -webkit-transform:rotate(7deg); /* Safari 和 Chrome */
+  -o-transform:rotate(7deg); 	/* Opera */
+}
+
+/* nth-child */
+div:nth-child(2){} /* ie8以及更早不支持 */
+div:first-child+div{} /* ie支持:first-child 必须声明 <!DOCTYPE> */
+
+/* css hack */
+.type{
+  color: #111; /* all */
+  color: #222\9; /* IE */
+  *color: #333; /* IE6/IE7 */
+  _color: #444; /* IE6 */
+}
+
+/* 淘宝样式初始化 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
